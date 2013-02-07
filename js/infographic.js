@@ -489,7 +489,7 @@ womenGraph.append("div")
 
 payGraph.append("div")
         .attr("class", "payGap")
-        .text("£" + diffPay + " gap average");
+        .text("£" + (diffPay * 2) + " gap average");
 
 var payLeaderboardGraph = payGraph.append("div")
         .attr("class", "leaderboard");
