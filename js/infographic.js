@@ -194,7 +194,7 @@ var relationshipJSON = {
         "M": 27000,
         "F": 13000
     }
-}
+};
 
 // Generate statistics
 var     relationshipPartners,   // total numbers of partners
@@ -253,8 +253,7 @@ var makePictoData = function(d, i, array) {
         if (remainder > 1e-6) myArray.push(remainder);
     }
     array[i] = myArray;
-    return;
-}
+};
 
 singleData.forEach(makePictoData);
 partnerData.forEach(makePictoData);
@@ -342,7 +341,7 @@ partnerMFgraph.selectAll(".partnerGraph--MF")
     .enter()
         .append("div")
         .attr("class", "partnerGraph partnerGraph--MF")
-        .style("width", function(d) {return (d * 30) + "px";})
+        .style("width", function(d) {return (d * 30) + "px";});
 
 var partnerFFgraph = partnerPictogram.append("div")
         .attr("class", "pictogramRow");
@@ -404,7 +403,7 @@ var payJSON = {
         "men": 45000,
         "women": 30000
     }
-}
+};
 
 var     payLeaderboard = payJSON["leaderboard"],
         payBreakdown =  payJSON["pay"],
@@ -430,14 +429,14 @@ var makePayData = function(pay, averagePay) {
     }
 
     return myArray;
-}
+};
 
 payData.push(makePayData(payMen, averagePay));
 payData.push(makePayData(payWomen, averagePay));
 
 leaderboardKeys = Object.keys(payLeaderboard);
 
-for (var i = 0; i < leaderboardKeys.length; i++) {
+for (i = 0; i < leaderboardKeys.length; i++) {
     payLeaderboardData.push([leaderboardKeys[i], payLeaderboard[leaderboardKeys[i]]]);
 }
 
