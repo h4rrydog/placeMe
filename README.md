@@ -7,7 +7,7 @@ Components:
 - This repository contains the D3.js implementation of three infographic templates. 
   See it in action: http://h4rrydog.github.io/PlaceMe 
 
-- Android app is at: https://github.com/mvarnagiris/PlaceMe
+- Android app is at: https://github.com/mvarnagiris/placeMe
 
 - Google App Engine backend is at: https://github.com/stestagg/placemeapp
 
